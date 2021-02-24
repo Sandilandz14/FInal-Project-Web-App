@@ -3,8 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+    <title>Nutty Nuts</title>
   </head>
 
-  <body></body>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <!-- Home must be Clickable Ligo/Image  -->
+      <a href="index.html" class="active">Home</a>
+      <a href="#aboutus">Shop</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#logo">LOGO</a>
+      <a href="#search">Search</a>
+      <a href="#login">Login</a>
+      <a href="#cart">Cart</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <section id="home1">
+      <div>
+        <h1 id="heading1">Delicious, natural and organic</h1>
+        <h4 id="heading2">
+          <div class="container">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </div>
+        </h4>
+      </div>
+    </section>
+    <section id="home2"></section>
+    <section id="home3"></section>
+
+    <footer>
+      <form action="http://127.0.0.1:5000/add-data/" method="POST">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name.."
+        />
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your email address.."
+        />
+        <label for="lname">Address</label>
+        <input
+          type="text"
+          id="addr"
+          name="addr"
+          placeholder="Your address.."
+        />
+        
+        <label for="subject">Password</label>
+        <input
+        type="password"
+          id="password"
+          name="password"
+          value=""
+  
+        ></input>
+        <input type="submit" value="Submit" />
+      </form>
+    </footer>
+
+    <script>
+      src = "root.js";
+    </script>
+  </body>
 </html>
