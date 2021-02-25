@@ -26,12 +26,12 @@ body {
 
 .topnav a:hover {
   background-color: silver;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 .topnav a.active {
   background-color: silver;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 .topnav a.active:hover {
   background-color: black;
