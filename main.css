@@ -25,17 +25,17 @@ body {
 }
 
 .topnav a:hover {
-  background-color: rgb(148, 131, 58);
+  background-color: silver;
   color: rgb(0, 0, 0);
 }
 
 .topnav a.active {
-  background-color: rgb(148, 131, 58);
+  background-color: silver;
   color: rgb(0, 0, 0);
 }
 .topnav a.active:hover {
-  background-color: rgb(248, 248, 248);
-  color: rgb(148, 131, 58);
+  background-color: black;
+  color: silver;
 }
 
 .topnav .icon {
@@ -92,7 +92,6 @@ html {
 #home3 {
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: space-evenly;
 }
 footer {
   background-color: rgb(255, 255, 255);
