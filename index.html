@@ -65,7 +65,7 @@
 
 
     <footer>
-      <form action="http://127.0.0.1:5000/add-data/" method="POST">
+      <form onsubmit="event.preventDefault(); addUsers();" id="reg-form">
         <label for="name">Full Name</label>
         <input
           type="text"
@@ -100,8 +100,6 @@
       </form>
     </footer>
 
-    <script>
-      src = "root.js";
-    </script>
+    <script src = "root.js"></script>
   </body>
 </html>
