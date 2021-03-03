@@ -30,13 +30,13 @@ function getProducts() {
       console.log(list);
       data.forEach((product) => {
         let item = `
-          <div class="card>
+          <div class= "card" >
             <img src=${product.image} />
             <h4>${product.name}</h4>
           </div>
         `;
         console.log(item);
-        list.innerHTML = item;
+        list.innerHTML += item;
       });
     });
 }
