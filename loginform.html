@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Login & Signup Form</title>
+    <title>Login & Signup Forms</title>
     <link rel="stylesheet" href="login.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -25,7 +25,83 @@
       </div>
     </section>
     <section>
-      <div class="wrapper">
+      <div id="sign-up">
+        <h2>Click here to Register:</h2>
+
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER:</button>
+      
+      <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Fullname</b></label>
+            <input type="text" placeholder="Enter fullname" name="name" required>
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="Your email address" name="email" required>
+            <label for="uname"><b>Address</b></label>
+            <input type="text" placeholder="Enter your address" name="addr" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+        
+      </div>
+     <div id="login">
+      <h2>Click here to login:</h2>
+
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      
+      <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+     </div>
+
+
+
+
+
+      <!-- <div class="wrapper">
         <div class="title-text">
           <div class="title login">Login Form</div>
           <div class="title signup">Signup Form</div>
@@ -34,10 +110,11 @@
           <div class="slide-controls">
             <input type="radio" name="slide" id="login" checked />
             <input type="radio" name="slide" id="signup" />
-            <label for="login" class="slide login">Login</label>
-            <label for="signup" class="slide signup">Signup</label>
-            <div class="slider-tab"></div>
+            <label for="login" class="slide login">Login</label> -->
+            <!-- <label for="signup" class="slide signup">Signup</label> -->
+            <!-- <div class="slider-tab"></div>
           </div>
+
           <div class="form-inner">
             <form onsubmit="event.preventDefault; login()" class="login">
               <div class="field">
@@ -48,26 +125,40 @@
               </div>
               <div class="pass-link">
                 <a href="#">Forgot password?</a>
-              </div>
-              <div class="field btn">
-                <div class="btn-layer"></div>
-                <input type="submit" value="Login" />
-              </div>
-              <div class="signup-link">
+              </div> -->
+              <!-- <div class="field btn"> -->
+              <!-- <div class="btn-layer"></div> -->
+              <!-- <button type="submit">SUBMIT</button> -->
+              <!-- </div> -->
+              <!-- <div class="signup-link">
                 Not a member? <a href="">Signup now</a>
-              </div>
-            </form>
-            <form action="#" class="signup">
+              </div> -->
+            <!-- </form> -->
+            <!-- <form onsubmit="event.preventDefault(); addUsers();" id="reg-form">
               <div class="field">
-                <input type="text" placeholder="Email Address" required />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
               </div>
               <div class="field">
-                <input type="password" placeholder="Password" required />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input type="text" name="addr" placeholder="Address" required />
               </div>
               <div class="field">
                 <input
                   type="password"
-                  placeholder="Confirm password"
+                  name="password"
+                  placeholder="Password"
                   required
                 />
               </div>
@@ -75,11 +166,11 @@
                 <div class="btn-layer"></div>
                 <input type="submit" value="Signup" />
               </div>
-            </form>
-          </div>
+            </form> -->
+          <!-- </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer></footer>
 
     <script src="login.js"></script>

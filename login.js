@@ -18,7 +18,7 @@
 
 let users;
 
-fetch("https://sleepy-journey-80556.herokuapp.com/show-records/")
+fetch("http://127.0.0.1:5000/show-records/")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
@@ -37,10 +37,20 @@ function login() {
       : false;
   });
 
-  if (loggedIn > 0) {
+  if (loggedIn.length > 0) {
     alert("User logged in");
     window.location.href = "./index.html";
   } else {
     alert("Credentials invalid");
   }
 }
+
+// Get the modal
+var modal = document.getElementById("id01");
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

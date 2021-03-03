@@ -1,7 +1,7 @@
 function addUsers() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("http://127.0.0.1:5000/add-data/", {
+  fetch("https://sleepy-journey-80556.herokuapp.com/add-data/", {
     method: "POST",
     body: JSON.stringify({
       name: inputs[0].value,
@@ -15,7 +15,7 @@ function addUsers() {
   })
     .then((response) => response.json())
     .then((json) => {
-      alert("User has been created");
+      alert("You have succesfully registered");
       document.getElementById("reg-form").reset();
     });
 }
@@ -35,7 +35,7 @@ function getProducts() {
             <h4>${product.name}</h4>
           </div>
         `;
-        console.log(item);
+        // console.log(item);
         list.innerHTML += item;
       });
     });
