@@ -8,61 +8,10 @@
   </head>
 
   <body>
-    <section>
-      <div class="topnav" id="myTopnav">
-        <!-- Home must be Clickable Logo/Image  -->
-        <a href="index.html" class="active">Home</a>
-        <a href="#aboutus">Shop</a>
-        <a href="#aboutus">About Us</a>
-        <a href="#philosophy">Philosophy</a>
-        <a href="#logo">LOGO</a>
-        <a href="#search">Search</a>
-        <a href="#login">Login</a>
-        <a href="#cart">Cart</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </section>
-    <section>
-      <h3>SIGNUP form:</h3>
-      <form onsubmit="event.preventDefault(); addUsers();" id="reg-form">
-        <label for="name">Full Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your full name.."
-        />
-        <label for="email">Email</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Your email address.."
-        />
-        <label for="lname">Address</label>
-        <input
-          type="text"
-          id="addr"
-          name="addr"
-          placeholder="Your address.."
-        />
-        
-        <label for="subject">Password</label>
-        <input
-        type="password"
-          id="password"
-          name="password"
-          value=""
-  
-        ></input>
-        <input type="submit" value="Submit" />
-      </form>
     </section>
     <section>
       <h3>LOGIN form:</h3>
-      <form onsubmit="event.preventDefault(); addUsers();" id="reg-form"></form>
+      <form onsubmit="event.preventDefault; login()" class="login" id="login">
         <label for="email">Email</label>
         <input
           type="text"
@@ -71,7 +20,7 @@
           placeholder="Your email address.."
         />
         
-        <label for="password" onsubmit="event.preventDefault; login()" class="login" id="login">Password</label>
+        <label for="password" >Password</label>
         <input
         type="password"
           id="password"
@@ -86,7 +35,7 @@
     <footer></footer>
 
     <script src="./login.js"></script>
-    <script src = "root.js"></script>
+    <!-- <script src = "root.js"></script> -->
   </body>
 </html>
 
