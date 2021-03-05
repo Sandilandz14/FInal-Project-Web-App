@@ -25,154 +25,70 @@
       </div>
     </section>
     <section>
-      <div id="sign-up">
-        <h2>Click here to Register:</h2>
-
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER:</button>
-      
-      <div id="id01" class="modal">
+      <h3>SIGNUP form:</h3>
+      <form onsubmit="event.preventDefault(); addUsers();" id="reg-form">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name.."
+        />
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your email address.."
+        />
+        <label for="lname">Address</label>
+        <input
+          type="text"
+          id="addr"
+          name="addr"
+          placeholder="Your address.."
+        />
         
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img_avatar2.png" alt="Avatar" class="avatar">
-          </div>
-      
-          <div class="container">
-            <label for="uname"><b>Fullname</b></label>
-            <input type="text" placeholder="Enter fullname" name="name" required>
-            <label for="uname"><b>Email</b></label>
-            <input type="text" placeholder="Your email address" name="email" required>
-            <label for="uname"><b>Address</b></label>
-            <input type="text" placeholder="Enter your address" name="addr" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-              
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
-      </div>
+        <label for="subject">Password</label>
+        <input
+        type="password"
+          id="password"
+          name="password"
+          value=""
+  
+        ></input>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <section>
+      <h3>LOGIN form:</h3>
+      <form onsubmit="event.preventDefault(); addUsers();" id="reg-form"></form>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your email address.."
+        />
         
-      </div>
-     <div id="login">
-      <h2>Click here to login:</h2>
-
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-      
-      <div id="id01" class="modal">
-        
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img_avatar2.png" alt="Avatar" class="avatar">
-          </div>
-      
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-              
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
-      </div>
-     </div>
-
-
-
-
-
-      <!-- <div class="wrapper">
-        <div class="title-text">
-          <div class="title login">Login Form</div>
-          <div class="title signup">Signup Form</div>
-        </div>
-        <div class="form-container">
-          <div class="slide-controls">
-            <input type="radio" name="slide" id="login" checked />
-            <input type="radio" name="slide" id="signup" />
-            <label for="login" class="slide login">Login</label> -->
-            <!-- <label for="signup" class="slide signup">Signup</label> -->
-            <!-- <div class="slider-tab"></div>
-          </div>
-
-          <div class="form-inner">
-            <form onsubmit="event.preventDefault; login()" class="login">
-              <div class="field">
-                <input type="text" placeholder="Email Address" required />
-              </div>
-              <div class="field">
-                <input type="password" placeholder="Password" required />
-              </div>
-              <div class="pass-link">
-                <a href="#">Forgot password?</a>
-              </div> -->
-              <!-- <div class="field btn"> -->
-              <!-- <div class="btn-layer"></div> -->
-              <!-- <button type="submit">SUBMIT</button> -->
-              <!-- </div> -->
-              <!-- <div class="signup-link">
-                Not a member? <a href="">Signup now</a>
-              </div> -->
-            <!-- </form> -->
-            <!-- <form onsubmit="event.preventDefault(); addUsers();" id="reg-form">
-              <div class="field">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                />
-              </div>
-              <div class="field">
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="Email Address"
-                  required
-                />
-              </div>
-              <div class="field">
-                <input type="text" name="addr" placeholder="Address" required />
-              </div>
-              <div class="field">
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  required
-                />
-              </div>
-              <div class="field btn">
-                <div class="btn-layer"></div>
-                <input type="submit" value="Signup" />
-              </div>
-            </form> -->
-          <!-- </div>
-        </div>
-      </div>
-    </section> -->
+        <label for="password" onsubmit="event.preventDefault; login()" class="login" id="login">Password</label>
+        <input
+        type="password"
+          id="password"
+          name="password"
+          value=""
+  
+        ></input>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    </section>
     <footer></footer>
 
-    <script src="login.js"></script>
+    <script src="./login.js"></script>
+    <script src = "root.js"></script>
   </body>
 </html>
+
+
+
