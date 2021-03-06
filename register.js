@@ -1,7 +1,7 @@
 function addUsers() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("https://sleepy-journey-80556.herokuapp.com/add-data/", {
+  fetch("http://127.0.0.1:5000/add-data/", {
     method: "POST",
     body: JSON.stringify({
       name: inputs[0].value,
