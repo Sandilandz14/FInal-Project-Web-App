@@ -19,6 +19,7 @@ function getProducts() {
             <h5>${product.description}</h5>
             <h5>${product.reviews}</h5>
             <p><button>Add to Cart</button></p>
+            <p><a href='details.html'><button>View more details</button></a></p>
             </div>
             
           </div>
