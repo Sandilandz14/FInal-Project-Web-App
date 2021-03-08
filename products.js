@@ -9,11 +9,18 @@ function getProducts() {
       data.forEach((product) => {
         let item = `
           <div class="card" id="container" >
+            <div class="product-image">
             <img src=${product.image} />
+            </div>
+
+            <div class = "product-info">
             <h4>${product.name}</h4>
-            <h5>${product.description}</h5>
             <h4>${product.price}</h4>
+            <h5>${product.description}</h5>
             <h5>${product.reviews}</h5>
+            <p><button>Add to Cart</button></p>
+            </div>
+            
           </div>
         `;
         // console.log(item);

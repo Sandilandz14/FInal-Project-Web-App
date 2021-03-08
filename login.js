@@ -23,7 +23,7 @@ function login() {
 
   if (loggedIn.length > 0) {
     alert("You are now logged in");
-    window.location.href = "index.html";
+    window.location.href = "./home.html";
   } else {
     alert("Credentials invalid");
   }
