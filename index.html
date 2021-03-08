@@ -3,73 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="main.css" rel="stylesheet" />
-    <title>Nutty Nuts</title>
+    <link href="index.css" rel="stylesheet" />
+    <title>REGISTER</title>
   </head>
-
   <body>
-    <div class="topnav" id="myTopnav">
-      <!-- Home must be Clickable Logo/Image  -->
-      <a href="index.html" class="active">Home</a>
-      <a href="products.html">Shop</a>
-      <a href="about.html">About Us</a>
-      <a href="#philosophy">Philosophy</a>
-      <a href="#logo">LOGO</a>
-      <a href="#search">Search</a>
-      <a href="register.html">Login</a>
-      <a href="#cart">Cart</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <section id="home1">
-      <div>
-        <h1 id="heading1" style="color: silver;">Delicious, natural and organic</h1>
-        <h4 id="heading2" style="color: silver;">
-          <div class="container" style="display:inline-block; min-width:3cm;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
-          </div>
-        </h4>
+    <form onsubmit="event.preventDefault(); addUsers();" id="reg-form">
+      <div class="container">
+        <h1>Register Here:</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+
+        <label for="name"><b>Fullname</b></label>
+        <input
+          type="text"
+          placeholder="Enter fullname..."
+          name="name"
+          required
+        />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter email address..."
+          name="email"
+          required
+        />
+
+        <label for="addr"><b>Address</b></label>
+        <input type="text" placeholder="Repeat Password" name="addr" required />
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="password" required />
+        <hr />
+        <button type="submit" class="registerbtn">Register</button>
       </div>
-    </section>
 
-    <ul id="products"></ul>
-
-    <section id="home2">
-      <div id="qr" style="display:inline-block; min-width:50vw; height:100vh; align-content: center; vertical-align: middle;" >
-        <img src="images/seeds2.jpg" >
+      <div class="container signin">
+        <p>Already have an account? <a href="./loginform.html">Login</a>.</p>
       </div>
-      <div style="display:inline-block;vertical-align: middle;">
-        THis is an image
-      </div>
-     
-      </div> 
-    </section>
-
-    <section id="home3">
-      <div>
-        <div >
-          THis is an image
-        </div>
-          <div>
-            <img src ='images/stones2.jpg' alt='image-seeds'>
-          </div>
-      </div>
-    
-      
-
-      <!-- style="display:inline-block;vertical-align: middle;"
-      id="qr1" style="display:inline-block; min-width:50vw; height:100vh; align-content: center; vertical-align: middle;"-->
-    </section> 
-
-
-    <footer>
-      
-    </footer>
-
-    <script src = "root.js"></script>
+    </form>
+    <footer></footer>
+    <script src="./index.js"></script>
   </body>
 </html>
