@@ -22,6 +22,48 @@ body {
   padding: 25px;
   border: 1px solid white;
 }
+.footer .footer-content h1,
+footer .footer-content h2 {
+  color: white;
+}
+.footer .footer-content .about h1 span {
+  color: rgb(36, 119, 91);
+}
+.footer .footer-content .about .contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 3px;
+}
+.footer .footer-content .links ul a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.footer .footer-content .links ul a:hover {
+  color: white;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.footer .footer-content .contact-form .contact-input {
+  background-color: #272727;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: 0.9rem 1.4rem;
+  border: none;
+}
+.footer .footer-content .contact-form .contact-input:focus {
+  background-color: #1a1a1a;
+}
+button {
+  background-color: rgb(36, 119, 91);
+  color: white;
+  border-radius: 5%;
+}
+button:hover {
+  background-color: white;
+  color: rgb(36, 119, 91);
+}
 .footer .footer-bottom {
   background-color: #343a40;
   color: #d8d2d2;
