@@ -16,7 +16,7 @@ function login() {
   console.log(eml);
   console.log(pswrd);
   let loggedIn = users.filter((user) => {
-    return user.email == eml && user.password == pswrd ? true : false;
+    return user.email == eml && user.password == pswrd;
   });
 
   console.log(loggedIn);
@@ -24,6 +24,7 @@ function login() {
   if (loggedIn.length > 0) {
     alert("You are now logged in");
     window.location.href = "./home.html";
+    console.log(window.location.href);
   } else {
     alert("Credentials invalid");
   }
