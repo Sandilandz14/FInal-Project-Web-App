@@ -1,6 +1,6 @@
 let users = [];
 
-fetch("http://127.0.0.1:5000/show-records/")
+fetch("https://sleepy-journey-80556.herokuapp.com/show-records/")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
