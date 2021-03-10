@@ -254,6 +254,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "Lora", serif;
+  background-color: black;
 }
 #home1 {
   background-image: url("images/seeds1.jpg");
@@ -261,6 +262,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 70px;
 }
 /* #text-1 {
   display: grid; 
