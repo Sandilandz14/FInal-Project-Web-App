@@ -39,7 +39,37 @@
         <li><a href="products.html">Shop</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#contact-us">Contact Us</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="index.html">Logout</a></li>
+        <!-- Trigger/Open The Modal -->
+<button id="myBtn">Cart<i class="fa fa-shopping-cart"></i></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Welcome to your shopping cart</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Check Out:</h3>
+    </div>
+  </div>
+
+</div>
+        <!-- <button
+          class="place"
+          data-modal-target="#modal"
+          onclick=toggleModal()
+        >
+          CART<i class="fa fa-shopping-cart"></i>
+        </button> -->
+        
       </div>
       <div class="search-icon">
         <span class="fas fa-search"></span>
@@ -56,7 +86,7 @@
         />
         <button type="submit" class="fas fa-search"></button>
       </form>
-      <div class="cart-search">
+      <!-- <div class="cart-search">
         <div class="cart-cont" id="cart">
           <a class="btn" id="myBtn"
             ><img
@@ -67,27 +97,13 @@
           /></a>
           <span class="badge badge-warning" id="lblCartCount"> 0 </span>
         </div>
-      </div>
+      </div> -->
     </nav>
   </div>
   <body>
-    <section>
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content" id="content">
-          <span class="close">&times;</span>
-          <div class="total-price">
-            <div class="total-results">
-              <h1>Total Price:R</h1>
-              <h1 class="price">0</h1>
-              <button class="checkout" onclick="checkout();">Checkout</button>
-            </div>
-            <div id="contents"></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
+
+    </div>
     <section>
       <!-- <h1>MY PRODUCTS:</h1> -->
       <ul id="products"></ul>
