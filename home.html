@@ -9,6 +9,10 @@
       src="https://kit.fontawesome.com/93d5baf36b.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="home.css" rel="stylesheet" />
   </head>
   <body>
@@ -47,16 +51,22 @@
       </nav>
     </div>
     <section id="home1">
-      <div>
-        <h1 id="heading1" style="color: silver">
+      <div class="styling">
+        <h1 id="heading1" style="color: white">
           Delicious, natural and organic
         </h1>
-        <h4 id="heading2" style="color: silver">
-          <div class="container" style="display: inline-block; min-width: 3cm">
+        <h4 id="heading2" style="color: white">
+          <div
+            class="container"
+            style="display: inline-block; min-width: 3cm; color: white"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
           </div>
         </h4>
       </div>
@@ -102,6 +112,16 @@
               <li><a href="#">Terms and Conditions</a></li>
               <li><a href="#">FAQs</a></li>
             </ul>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color: navy"></i>
+              <i class="fa fa-cc-amex" style="color: blue"></i>
+              <i class="fa fa-cc-mastercard" style="color: red"></i>
+              <i class="fa fa-cc-discover" style="color: orange"></i>
+            </div>
+            <!-- <div class="footer-bottom">
+              &copy; vitalife.netify.app | by Sandile Tukani
+            </div> -->
           </div>
           <div class="footer-section contact-form">
             <h2>Contact Us</h2>
@@ -120,29 +140,9 @@
 
               <button type="submit">Send</button>
             </form>
-            <!-- <form action="https://formspree.io/f/xgepgapq" method="POST">
-              <input
-                type="email"
-                name="email"
-                class="text-input contact-input"
-                placeholder="Your email address..."
-              />
-              <textarea
-                name="message "
-                class="text-input contact-input"
-                placeholder="Your message..."
-              ></textarea>
-              <button type="submit" class="btn btn-big">
-                <i style="font-size: 24px" class="fa">&#xf003;</i>Send
-              </button>
-            </form> -->
           </div>
         </div>
-        <div class="footer-bottom">
-          &copy; vitalife.netify.app | by Sandile Tukani
-        </div>
       </div>
-      <!-- </footer> -->
     </section>
     <script src="./home.js"></script>
   </body>

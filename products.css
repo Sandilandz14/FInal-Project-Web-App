@@ -18,7 +18,10 @@ body {
   height: 70px;
   border-radius: 50%;
 }
-
+.cart-pic {
+  height: 50px;
+  border-radius: 50%;
+}
 nav {
   background: black;
   display: flex;
@@ -305,9 +308,10 @@ html {
   bottom: 0;
 }
 .footer .footer-content {
-  border: 2px solid rgb(143, 176, 199);
+  /* border: 2px solid rgb(143, 176, 199); */
   height: 350px;
   display: flex;
+  flex-wrap: wrap;
 }
 .footer .footer-content .footer-section {
   flex: 1;
@@ -366,4 +370,30 @@ button:hover {
   bottom: 0px;
   left: 0px;
   padding-top: 20px;
+}
+/* STYLING ACCEPTED CARDS */
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
 }
